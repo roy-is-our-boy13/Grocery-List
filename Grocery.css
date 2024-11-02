@@ -1,14 +1,59 @@
-h1
-{
-    color: blue;  
-}
-
+/*
+        Change the header “h1” to read “My Grocery List” and 
+    alter the color from black to blue.
+*/
+h1 { color: blue; }
+/*
+        Change the body of the HTML file from 
+    white to lightcyan.
+*/
+body { background-color: lightcyan; }
+/*
+        This adjustment will ensure that 
+    the main header title, “My Grocery List,” 
+    remains centered on the page.
+*/
+header { text-align: center; }
+/*
+        This item is called “square” 
+    and is meant for creating a square
+    for the grocery section headers. 
+    The text box should be kept in 
+    yellow color.
+*/
 .square
 {
     list-style-type: square;
+    border: 1px solid black;
+    background-color: gold;
+    width: 460px;
+    padding: 7px;
 }
-
-.circle
+/*
+        This will adjust the image’s 
+    width and height. This will help 
+    ensure that all images appear 
+    evenly sized and neither too big 
+    nor too small.
+*/
+img
 {
-    list-style-type: circle;
+    width: 200px;
+    height: 200px;
+}
+/*
+        This item is called “grocerySection,” 
+    which will create a box for various 
+    categories in the grocery list. It will 
+    have a light grey background color.
+*/
+.grocerySection
+{
+    margin: 10px;
+    border-radius: 1px;
+    background-color: lightgrey;
+    width: 200px;
+    border: 1px solid black;
+    padding: 11px;
+    float: left;
 }

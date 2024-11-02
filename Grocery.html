@@ -1,27 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang = "en">
+<head><!-- The start of the main head of the html page. -->
+    <!-- Style to do the same things for a css file but in a html file.-->
+    <style>
+        /*
+                This item is called “boldLine” and will be used to bold 
+            the border lines of an image. Although it could be included
+            in the “Grocery.css” file, we are testing it in an HTML file 
+            to confirm that it works correctly.
+        */
+        .boldLine
+        {
+            border: 5px solid #8d2626;
+        }
+    </style>
     <link rel="stylesheet" href="Grocery.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery List</title>
-</head>
-<body>
-    <section>
-        <header><h1>My Grocery List</h1></header>
-
-        <h2>Pantry Items</h2>
-        <div>
-        
-        </div>
+    <title>Grocery List</title><!-- The main title for the page tab called "Grocery List". -->
+</head><!-- THe end of the head for the html page. -->
+<body><!-- The start of the main body of the html page for Grocery List. -->
+    <!-- The main head of the whole html page called "My Grocery List". -->
+    <header><h1>My Grocery List</h1></header>
+    <section><!-- The start of of the first section called Drinks. -->
+        <h2 class = "square">Drinks</h2><!-- Display the header title for Drinks. -->
+        <article class = "grocerySection"><!-- An article to only contain a list of Hot beverages. -->
+           <h3>Hot</h3><!-- Display the header title "Hot". -->
+            <ul><!-- This is an unordered list of the hot beverages. -->
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Hot Choco</li>
+                <li>Latte</li>
+            </ul><!-- The end of an unordered list of the hot beverages.-->
+        </article>
+        <!-- An article that contains soda beverages. -->
+        <article class = "grocerySection">
+            <h3>Soda</h3><!-- Display the header title "Soda". -->
+            <ul><!-- This is an unordered list of the soda beverages. -->
+                <li>Coke</li>
+                <li>Sprite</li>
+                <li>Pepsi</li>
+                <li>Root Beer</li>
+            </ul><!-- The end of an unordered list of the soda beverages.-->
+        </article>
+        <!-- an article to only contain a picure of beverages. -->
+        <article>
+            <!-- This will display an image of sodas to represent beverages. -->
+            <img src="https://burgernj.com/wp-content/uploads/2021/05/Can-Soda_result.jpg" alt="drinks" class="boldLine">
+        </article>
+    </section><!-- This is the end of the section for drinks. -->
+    <section><!-- The start of the 2nd section for freezer items. -->
+    <h2 class = "square"> Freezer Items</h2><!-- This will display the header title called "Freezer Items". -->
+    <!-- An article that contains a list of veggtables that could be stored in a freezer. -->
+    <article class = "grocerySection"> 
+            <h3>Veggies</h3><!-- Display the header title "Veggies". -->
+            <ol><!-- This is an ordered list of veggtables. -->
+                <li>Broccolie</li>
+                <li>Carrots</li>
+                <li>Cauliflower</li>
+                <li>Bell Peppers</li>
+            </ol><!-- The end of the ordered list of veggtables. -->
+        </article>
+        <!-- An articel that contins a list of snack that is commonly stored in a freezer.-->
+        <article class = "grocerySection">
+            <h3>Snacks</h3><!-- Display the header title "Snacks". -->
+            <ol><!-- This is an ordered list of snacks that are stored in a freezer. -->
+                <li>Chicken Nuggets</li>
+                <li>Hot Pockets</li>
+                <li>Fries</li>
+                <li>Tator Tots</li>
+            </ol><!-- The end of the ordered list of snacks. -->
+        </article>
+        <!-- An artice that just displays a picture of snacks in a freezer. -->
+        <article>
+            <!-- This will display an image of snacks in a freezer. -->
+            <img src="https://www.soupercubes.com/cdn/shop/articles/UprightFreezer6.jpg?v=1669742308&width=1024" alt="Freezer Items" class="boldLine">
+        </article>
     </section>
-       
-   
-    <section>
-    <h2>Freezer Items</h2>
-        <div>
-        
-        </div>
-    </section>
-</body>
+    <section><!-- This is a 3rd section for containing a list of Pantry Items. -->
+        <h2 class = "square"> Pantry Items</h2>
+        <!-- An articel that contains a list of foods that are considered to be pantry items.-->
+        <article class = "grocerySection">
+                <h3>Canned</h3><!-- Display the header title "Canned". -->
+                <ol><!-- This is an ordered list of canned food that are considered pantry items. -->
+                    <li>Corn</li>
+                    <li>Tuna</li>
+                    <li>Green Beans</li>
+                    <li>Beans</li>
+                </ol><!-- The end of the ordered list of canned food.-->
+            </article>
+            <!-- An articel that contains a list of foods that are considered to be dry goods.-->
+            <article class = "grocerySection">
+                <h3>Dry Goods</h3><!-- Display the header title "Dry Goods". -->
+                <ol><!-- This is an ordered list of dry goods that are considered pantry items. -->
+                    <li>Rice</li>
+                    <li>Lental</li>
+                    <li>Oats</li>
+                    <li>Pancake Mix</li>
+                </ol><!-- The end of the ordered list of dry goods.-->
+            </article>
+            <!-- An artice that just displays a picture of pantry items. -->
+            <article>
+                <!-- This will display an image of pantry items, which are canned food.. -->
+                <img src="https://i0.wp.com/thelatestdish.com/wp-content/uploads/2022/11/pantry-rotated.jpg?resize=1140%2C1520&ssl=1" alt="Pantry Items" class="boldLine">
+            </article>
+        </section><!-- The end of the section for pantry items. -->
+    <footer>&copy Made in California</footer>
+</body><!-- The end of the main body of the html page.-->
 </html>
